@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/contact";
 import { Button } from "./ui/button";
 import { SettingsPopup } from "@/components/settings-popup";
 import FolderListPopup from "./folder-list-popup";
@@ -67,8 +68,8 @@ export default function TopHeader() {
           <SaaSContextLoader />
         </Suspense>        
         <div className="font-medium flex justify-center items-center">
-          <div><img className="h-14 w-14" src={currentTheme === 'dark' ? `/img/doctor-dok-logo-white.svg` : `/img/doctor-dok-logo.svg`} /></div>
-          <div className="xs:hidden xxs:hidden sm:flex justify-center items-center sm:flex">Doctor Dok {folderContext?.currentFolder ? (<FolderOpen className="w-6 h-6 ml-2 mr-2"/>) : ''} {folderContext?.currentFolder?.displayName()} {folderContext?.currentFolder ? <Button className="ml-3" variant="outline" onClick={(e) => { folderContext?.setFolderListPopup(true); folderContext?.setFolderEditOpen(true); }}>Edit folder</Button> : null } </div>
+          <div><img className="h-14 w-14" src={currentTheme === 'dark' ? `/img/doctor-ai-logo-white.svg` : `/img/doctor-ai-logo.svg`} /></div>
+          <div className="xs:hidden xxs:hidden sm:flex justify-center items-center sm:flex">Doctor Ai {folderContext?.currentFolder ? (<FolderOpen className="w-6 h-6 ml-2 mr-2"/>) : ''} {folderContext?.currentFolder?.displayName()} {folderContext?.currentFolder ? <Button className="ml-3" variant="outline" onClick={(e) => { folderContext?.setFolderListPopup(true); folderContext?.setFolderEditOpen(true); }}>Edit folder</Button> : null } </div>
         </div>
         <div className="flex items-center gap-2">
         <FolderListPopup />
@@ -122,13 +123,13 @@ export default function TopHeader() {
                   </CommandGroup>
                   ) : null}
                   <CommandGroup heading="Security">
-                    <CommandItem key="cmd-security-report" className="cursor-pointer text-xs" onSelect={(v) => { window.open('mailto:info@catchthetornado.com?subject=' + encodeURIComponent('Security incident report for ' + dbContext?.databaseHashId)) }}><FormInputIcon className="w-6 h-6" /> Report incident</CommandItem>
-                    <CommandItem key="cmd-security-close-account" className="cursor-pointer text-xs" onSelect={(v) => { window.open('mailto:info@catchthetornado.com?subject=' + encodeURIComponent('Close account request for ' + dbContext?.databaseHashId)) }}><FormInputIcon className="w-6 h-6" /> Close account</CommandItem>
+                    <CommandItem key="cmd-security-report" className="cursor-pointer text-xs" onSelect={(v) => { window.open('mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Security incident report for ' + dbContext?.databaseHashId)) }}><FormInputIcon className="w-6 h-6" /> Report incident</CommandItem>
+                    <CommandItem key="cmd-security-close-account" className="cursor-pointer text-xs" onSelect={(v) => { window.open('mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Close account request for ' + dbContext?.databaseHashId)) }}><FormInputIcon className="w-6 h-6" /> Close account</CommandItem>
                     <CommandItem key="cmd-change-key" className="cursor-pointer text-xs" onSelect={(v) => { keyContext.setChangeEncryptionKeyDialogOpen(true);  }}><KeyIcon className="w-6 h-6" /> Change encryption key</CommandItem>
                     <CommandItem key="cmd-logout" className="cursor-pointer text-xs" onSelect={(v) => { dbContext?.logout(); }}><LogOutIcon className="w-6 h-6" /> Logout</CommandItem>
                   </CommandGroup>
                   <CommandGroup heading="Help">
-                    <CommandItem key="cmd-contact-us" className="cursor-pointer text-xs" onSelect={(v) => { window.open('mailto:info@catchthetornado.com?subject=' + encodeURIComponent('Contact us for ' + dbContext?.databaseHashId)) }}><FormInputIcon className="w-6 h-6" /> Contact us</CommandItem>
+                    <CommandItem key="cmd-contact-us" className="cursor-pointer text-xs" onSelect={(v) => { window.open('mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Contact us for ' + dbContext?.databaseHashId)) }}><FormInputIcon className="w-6 h-6" /> Contact us</CommandItem>
                     <CommandItem key="cmd-terms" className="cursor-pointer text-xs" onSelect={(v) => { termsContext.setTermsDialogOpen(true); }}><FileIcon className="w-6 h-6" /> Accepted terms</CommandItem>
                   </CommandGroup>
               </CommandList>

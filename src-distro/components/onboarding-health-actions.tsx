@@ -23,7 +23,7 @@ export function OnboardingHealthActions() {
       const apiClient = new ApiClient('', dbContext, saasContext)
       toast.info('Downloading examples ...');
 
-      const examplesArrayBuffer = await apiClient.getArrayBuffer('/onboarding/DoctorDok-onboarding.zip');
+      const examplesArrayBuffer = await apiClient.getArrayBuffer('/onboarding/DoctorAi-onboarding.zip');
       await recordContext?.importRecords(examplesArrayBuffer as ArrayBuffer);
       recordContext?.listRecords(folderContext?.currentFolder as Folder);
     } catch (error) {
@@ -43,7 +43,7 @@ export function OnboardingHealthActions() {
           <FileDown className="w-12 h-12 mb-4 text-primary" />
           <CardTitle>Import examples</CardTitle>
           <CardDescription className="mt-2">
-            Import example and anonymized health records on which you might test all the Doctor Dok features like chatting with health history or getting longevity/health improvement ideas.
+            Import example and anonymized health records on which you might test all the Doctor Ai features like chatting with health history or getting longevity/health improvement ideas.
           </CardDescription>
           <Button className="mt-4">
             Import Examples
@@ -56,7 +56,7 @@ export function OnboardingHealthActions() {
           <Upload className="w-12 h-12 mb-4 text-primary" />
           <CardTitle>Import your own health results</CardTitle>
           <CardDescription className="mt-2">
-            Upload PDF file with your latest blood results, MRI, RTG or doctor's note to check how Doctor Dok can help you manage and improve health data.
+            Upload PDF file with your latest blood results, MRI, RTG or doctor's note to check how Doctor Ai can help you manage and improve health data.
           </CardDescription>
           <Button className="mt-4">
             Upload Files

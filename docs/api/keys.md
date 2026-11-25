@@ -109,4 +109,4 @@ A union type of `PutKeyResponseSuccess` and `PutKeyResponseError`.
 export type PutKeyResponse = PutKeyResponseSuccess | PutKeyResponseError;
 ```
 
-For more details, see the [source code](https://github.com/CatchTheTornado/doctor-dok/blob/main/src/data/client/key-api-client.ts).
+For more details, see the [source code](https://github.com/Shaksperio/Doctor-Ai/blob/main/src/data/client/key-api-client.ts).

@@ -24,8 +24,8 @@ export default function TopHeaderStatic() {
     return (
       <div className="sticky top-0 z-1000 flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-200 dark:bg-zinc-800 h-12">
         <div className="font-medium flex justify-center items-center">
-          <div><img className="h-14 w-14" src={currentTheme === 'dark' ? `/img/doctor-dok-logo-white.svg` : `/img/doctor-dok-logo.svg`} /></div>
-          <div className="">Doctor Dok <Link href="/" className="ml-3 underline hover:text-blue-500" >Go back to app</Link></div>
+          <div><img className="h-14 w-14" src={currentTheme === 'dark' ? `/img/doctor-ai-logo-white.svg` : `/img/doctor-ai-logo.svg`} /></div>
+          <div className="">Doctor Ai <Link href="/" className="ml-3 underline hover:text-blue-500" >Go back to app</Link></div>
         </div>
         <div className="flex items-center gap-2">
 

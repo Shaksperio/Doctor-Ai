@@ -109,4 +109,4 @@ A union type of `PutTermResponseSuccess` and `PutTermResponseError`.
 export type PutTermResponse = PutTermResponseSuccess | PutTermResponseError;
 ```
 
-For more details, see the [source code](https://github.com/CatchTheTornado/doctor-dok/blob/main/src/data/client/term-api-client.ts).
+For more details, see the [source code](https://github.com/Shaksperio/Doctor-Ai/blob/main/src/data/client/term-api-client.ts).

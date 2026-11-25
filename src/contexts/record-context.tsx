@@ -1704,7 +1704,7 @@ export const RecordContextProvider: React.FC<PropsWithChildren> = ({ children })
     const converter = new showdown.Converter({ tables: true, completeHTMLDocument: true, openLinksInNewWindow: true });
     converter.setFlavor('github');
 
-    let indexMd = '# DoctorDok Export\n\n';
+    let indexMd = '# DoctorAi Export\n\n';
 
     toast.info('Downloading attachments ...');
     for (const record of prepExportData) {
@@ -1742,7 +1742,7 @@ export const RecordContextProvider: React.FC<PropsWithChildren> = ({ children })
       zip.file('index.html', converter.makeHtml(indexMd.replaceAll('.md', '.html')));
 
       toast.info('Creating ZIP archive ...');
-      const exportFileName = 'DoctorDok-export' + filenamify(filterSelectedTags && filterSelectedTags.length ? '-' + filterSelectedTags.join('-') : '') + '.zip';
+      const exportFileName = 'DoctorAi-export' + filenamify(filterSelectedTags && filterSelectedTags.length ? '-' + filterSelectedTags.join('-') : '') + '.zip';
       const zipFileContent = await zip.generateAsync({ type: "blob" });
 
       toast.info('All records exported!')

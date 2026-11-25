@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/contact";
 import { useContext, useEffect, useState } from "react";
 import FolderItem from "./folder-item";
 import { FolderContext } from "@/contexts/folder-context";
@@ -73,7 +74,7 @@ export default function FolderListPopup() {
                     <div className="text-xs font-bold">available databases</div>
                     <div className="text-xs">{saasContext?.currentQuota.allowedDatabases - saasContext.currentUsage.usedDatabases} of {saasContext.currentQuota.allowedDatabases}</div>
                   </div>
-                  <div className="text-xs w-full"><Link className="underline hover-gray" href="mailto:info@catchthetornado.com">Contact us if you need more</Link></div>
+                  <div className="text-xs w-full"><Link className="underline hover-gray" href={"mailto:" + CONTACT_EMAIL}>Contact us if you need more</Link></div>
                 </div>) : null}
                 <div className="p-4 space-y-4">
                   <div className="text-sm font-bold w-full">Today</div>

@@ -1,6 +1,6 @@
 # API Documentation Index
 
-Hello! This is Doctor Dok's Web API documentation. Doctor Dok might be used as a powerfull health record and patient databse to be used in any health related app you might be building.
+Hello! This is Doctor Ai's Web API documentation. Doctor Ai might be used as a powerfull health record and patient databse to be used in any health related app you might be building.
 
 ## Table of contents
 
@@ -171,7 +171,7 @@ async function fetchFolders(authorizeRequest, defaultDatabaseIdHashSalt, default
 ## Note on encryption
 
 **WARNING**
-The Doctor Dok data access is end 2 end encrypted. All the data passed to the API should be encrypted with `encryptionKey` returned by the `authorizeDatabase` function above, otherwise the data is stored 100% unecnrypted
+The Doctor Ai data access is end 2 end encrypted. All the data passed to the API should be encrypted with `encryptionKey` returned by the `authorizeDatabase` function above, otherwise the data is stored 100% unecnrypted
 
 Exmaple data encryption functions (used by [lib/crypto](../src/lib/crypto.ts)) that might be helpfull:
 

@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Doctor Dok',
-    short_name: 'Doctor Dok',
+    name: 'Doctor Ai',
+    short_name: 'Doctor Ai',
     description: 'Secure Data Folder folder with AI assistant',
     start_url: '/',
     display: 'standalone',
@@ -11,7 +11,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#000',
     icons: [
       {
-        src: '/img/doctor-dok-logo.svg',
+        src: '/img/doctor-ai-logo.svg',
         sizes: 'any',
         type: 'image/svg+xml',
       },

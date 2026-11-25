@@ -1,69 +1,31 @@
-## Doctor Dok
-
-<p align="center">
-    <img src="readme-assets/top-header.png" />
-</p>
+# Doctor Ai
 
 **1 Password + AI for Health**
 
 **Convert all your Blood Tests, MRI Scans, TK Scans, After Visit reports, Hospital Admission Reports to JSON, safely store in the cloud and discuss, annotate, translate it with AI.**
 
-Doctor Dok is a secure storage, digitization, sharing and AI discovery platform for all your family and/or folders health data.
+Doctor Ai is a secure storage, digitization, sharing and AI discovery platform for all your family and/or folders health data.
 
 All health history - digitalized - accesible anywhere from Mobile or Desktop. Using AI you may **translate your health records to one of 50+ languages** - making abroad health services more accesible.
 
-Doctor Dok uses AI to OCR even a hardly readable photo of your healt documents. Then stores it in cloud with [Zero Trust Security architecture](https://github.com/CatchTheTornado/doctor-dok/issues/65) (no body but You can decrypt the data). 
+Doctor Ai uses AI to OCR even a hardly readable photo of your healt documents. Then stores it in cloud with [Zero Trust Security architecture](https://github.com/CatchTheTornado/doctor-dok/issues/65) (no body but You can decrypt the data). 
 
 Chat GPT, LLama 3.1 and other Ollama supported AI models available.
 
 
 ## Framework for building your Product
 
-Doctor Dok **is not intended for B2C/P** use cases as, due to its AI features, it requires a proper Medical Device compliance and certification process. AI Chat in the app is secured on the prompt level (for not giving any harmful recommendations, including second opinions from different AI Models). However, AI might hallucinate, and to make it B2C-ready, this app will require someone to take care of this process from a medicine standpoint.
+Doctor Ai **is not intended for B2C/P** use cases as, due to its AI features, it requires a proper Medical Device compliance and certification process. AI Chat in the app is secured on the prompt level (for not giving any harmful recommendations, including second opinions from different AI Models). However, AI might hallucinate, and to make it B2C-ready, this app will require someone to take care of this process from a medicine standpoint.
 
-Therefore, we are super open to any person or company willing to develop their own product or service based on the Doctor Dok technology platform. It's business-friendly and MIT-licensed. Please contact us if you're interested in this scenario or require any support: https://doctordok.com/contact.
+The project is MIT-licensed. See [NOTICE.md](NOTICE.md) for its origin and credits.
 
 ## AI Warning - only for research purposes
 
 **NEVER rely** on the output of the language models supported in the application (ChatGPT, LLama 3) for **making decisions** in your healthcare! It's designed strictly for **research purposes only and may contain errors or provide misleading information** due to its nature as an AI-powered tool. Consult qualified medical professionals before taking any action based on the information provided herein.
 
 
-<table>
-    <tr>
-        <td>
-            <a href="readme-assets/screen0.png"><img src="readme-assets/screen0.png" alt="Example record view" /></a>
-        </td>
-        <td>
-            <a href="readme-assets/screen1.png"><img src="readme-assets/screen1.png" alt="Multi folders support" /></a>
-        </td>
-        <td>
-            <a href="readme-assets/screen2.png"><img src="readme-assets/screen2.png" alt="Adding health data in any format" /></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="readme-assets/screen3.png"><img src="readme-assets/screen3.png" alt="Examination turned digital" /></a>
-        </td>
-        <td>
-            <a href="readme-assets/screen4.png"><img src="readme-assets/screen4.png" alt="AI used for OCRing the data" /></a>
-        </td>
-        <td>
-            <a href="readme-assets/screen5.png"><img src="readme-assets/screen5.png" alt="AI features" /></a>
-        </td>
-    </tr>
-</table>
-
 
 **Using AI Chat one might analyze years of medical history within seconds** self-formulating second opinions, checking possible treatments, checking medicine co-inferences etc.
-
-## Try it out
-
-You can host Doctor Dok on your own because it's <a href="LICENSE">MIT Licensed</a> Open Source. You might also want to give it a try in a hosted, fully secured, end2end encrypted environment by registering to beta tests on https://doctordok.com. You'll get AI tokens + free hosting for your health data.
-
-<a href="https://doctordok.com"><img src="readme-assets/try-doctordok.png" alt="Try Doctor Dok for free" /></a>
-
-**WARNING:** NEVER rely on the output of the language models supported in the application (ChatGPT, LLama 3) for making decisions in your healthcare! It's designed strictly for **research purposes only and may contain errors or provide misleading information** due to its nature as an AI-powered tool. Consult qualified medical professionals before taking any action based on the information provided herein.
-
 
 ## Key Features:
 
@@ -83,23 +45,21 @@ You can host Doctor Dok on your own because it's <a href="LICENSE">MIT Licensed<
 - Supports All types of medical records: Blood results, MRI Scans, RTG Scans, After-Visit reports ...
 - Multi Folders support,
 - PII (Personaly Identifiable Information) removal using AI or Blacklisting,
-- End 2 End data encryption - [read about the architecture](https://github.com/CatchTheTornado/doctor-dok/issues/65)
+- End 2 End data encryption - [read about the architecture (upstream description)](https://github.com/CatchTheTornado/doctor-dok/issues/65)
 - Safe sharing within your family, with your physician etc - using Sharing Key feature,
 - Access from Mobile or Desktop,
 - Dark and Light themes supported,
 - Full Rest API with JWT authorization for managing `folders`, `patinet-records`, `encrypted-attachments`, ai integrations and so on.
 - 100% TypeScript, Next JS, React + Shadcn-ui tech stack.
 
-<img src="readme-assets/features.png" alt="Features ..." />
-
 ## Software use cases
-- **End user** - using Doctor Dok as health Vault + research tool for "AI in Health",
-- **Med provider** - using Doctor Dok as secure framework - an EHR with per-patient secure folder sharing,
-- **Med tech** - using Doctor Dok as a framework for product development, AI experiments etc.
+- **End user** - using Doctor Ai as health Vault + research tool for "AI in Health",
+- **Med provider** - using Doctor Ai as secure framework - an EHR with per-patient secure folder sharing,
+- **Med tech** - using Doctor Ai as a framework for product development, AI experiments etc.
 
 ## API Docs
 
-Doctor Dok includes a powerfull Web API for building health-related apps including end 2 end encryption features. [Read the docs here](./docs/README.md).
+Doctor Ai includes a powerfull Web API for building health-related apps including end 2 end encryption features. [Read the docs here](./docs/README.md).
 
 ## PDF Extract API
 
@@ -107,7 +67,7 @@ If a document parsing and understanding is your thing, you might be also interes
 
 ## Structured data
 
-Doctor Dok uses standarized JSON format to which parses all input health records. By doing so it opens a way for all exciting new features like data summarization, diagraming, data compression, taking even years long health history into AI context. Things that previously were very difficult or even impossible for human beings.
+Doctor Ai uses standarized JSON format to which parses all input health records. By doing so it opens a way for all exciting new features like data summarization, diagraming, data compression, taking even years long health history into AI context. Things that previously were very difficult or even impossible for human beings.
 
 ## Encrypted storage
 
@@ -201,4 +161,10 @@ Structure complex genetic data into interpretable formats. Identify potential ge
 
 ## License
 
-Doctor Dok is released under [MIT](LICENSE) license.
+Doctor Ai is released under the [MIT](LICENSE) license. The original copyright notice is preserved in `LICENSE`.
+
+## Credits and origin
+
+Doctor Ai is a derivative work of [Doctor Dok](https://github.com/CatchTheTornado/doctor-dok), created by **Catch The Tornado** (Copyright (c) 2024 Catch The Tornado, MIT License), based on upstream commit `727ca70`. The core architecture (client-side encryption, folder/record data model, AI-based parsing pipeline, REST API) originates from their work. See [NOTICE.md](NOTICE.md) for details.
+
+"Doctor Dok", "Doctor-One", "Catch The Tornado" and their logos are names and marks of their respective owners and are not used to endorse this project.

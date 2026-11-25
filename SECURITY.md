@@ -2,14 +2,16 @@
 
 ## Supported Versions
 
-We're supporting the following versions of Doctor Dok with ongoing security updates and monitoring:
+Doctor Ai is under active adaptation from its upstream base. Only the latest commit on `main` receives security fixes.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.x     | :white_check_mark: |
+| main    | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-Contact us at info@catchthetornado.com to report any security issues/vulnerabilities to let us fix it ASAP.
+Please report vulnerabilities privately through GitHub Security Advisories on this repository (Security tab → "Report a vulnerability"). Do not open a public issue for security problems.
 
-As soon as we digest/test reported vulnerability you'll receive our action plan and required/recommended steps to minimize risks for You and/or your business.
+This project handles health data. Before using it with real patient data, have the encryption and key-management flows independently reviewed.
+
+Vulnerabilities that originate in the upstream code base ([Doctor-One/doctor-dok](https://github.com/Doctor-One/doctor-dok)) may also be worth reporting there.

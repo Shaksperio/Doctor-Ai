@@ -91,4 +91,4 @@ A union type of `PutConfigResponseSuccess` and `PutConfigResponseError`.
 export type PutConfigResponse = PutConfigResponseSuccess | PutConfigResponseError;
 ```
 
-For more details, see the [source code](https://github.com/CatchTheTornado/doctor-dok/blob/main/src/data/client/config-api-client.ts).
+For more details, see the [source code](https://github.com/Shaksperio/Doctor-Ai/blob/main/src/data/client/config-api-client.ts).

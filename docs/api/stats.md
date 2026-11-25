@@ -135,4 +135,4 @@ A union type of `AggregatedStatsResponseSuccess` and `AggregatedStatsResponseErr
 export type AggregatedStatsResponse = AggregatedStatsResponseSuccess | AggregatedStatsResponseError;
 ```
 
-For more details, see the [source code](https://github.com/CatchTheTornado/doctor-dok/blob/main/src/data/client/stat-api-client.ts).
+For more details, see the [source code](https://github.com/Shaksperio/Doctor-Ai/blob/main/src/data/client/stat-api-client.ts).
